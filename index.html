@@ -16,17 +16,85 @@
         <!-- Custom styles for this template -->
         <link href="css/cover.css" rel="stylesheet">
 
+        <style>
+            body{
+                color : #ccc;
+                font : normal 14px/22px 'Open Sans', sans-serif;
+            }
+            header{
+                height: 160px;
+            }
+            .imageArticle{
+                padding-left: 0px;
+            }
+            img.alignleft {
+                margin: 5px 10px 10px 0;
+                border: 15px solid #3f3f3f;
+            }
+            .alignleft {
+                float: left;
+                margin: 5px 20px 10px 0;
+            }
+            .alignleft {
+                float: left;
+                margin: 5px 20px 10px 0;
+            }
+            .portfolio-item{
+                margin-bottom:10px;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 25px;
+            }
+            .partner img{
+                margin-bottom: 5px;
+            }
+            .content-article{
+                text-align: justify;
+            }
+            .font-white{
+                color : #fff;
+            }
+            .logo{
+                padding-top: 20px;
+            }
+            .top-menu{
+                background-color: rgb(0, 0, 0);
+                background-color: rgba(0, 0, 0, 0.8);
+                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#90000000, endColorstr=#90000000);
+                ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#90000000, endColorstr=#90000000)";
+            }
+            .top-menu>li>a:hover {
+                background-color: #337ab7;
+            }
+            .top-menu>li>a:active {
+                background-color: #337ab7;
+            }
+            .navbar{
+                top: 0;
+                border-width: 0 0 1px;
+                right: 0;
+                left: 0;
+                z-index: 1030;
+            }
+            .text-left{
+                text-align:left
+            }
+            #footer{
+                height: 50px;
+                margin-top: 20px;
+            }
+        </style>
+
     </head>
     <body>
         <div class="site-wrapper">
             <header>
-                <div class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="navbar" role="navigation" style="padding-bottom: 10px; padding-top: 10px;">
                     <div class="container">
-                        <div class="navbar-header">
-                            <a href="/"><img src="img/logo.png" alt="Logo My Place" title="My Place Malang"></a>
+                        <div class="navbar-header logo">
+                            <a href="#"><img src="img/logo.png" alt="Logo My Place" title="My Place Malang" ></a>
                         </div>
                         <div class="collapse navbar-collapse">
-                            <ul class="nav navbar-nav navbar-right" style="margin-top: 15px;">
+                            <ul class="nav navbar-nav navbar-right top-menu" style="margin-top: 15px;">
                                 <li class="active"><a href="#">Home</a></li>
                                 <li>
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profile <b class="caret"></b></a>
@@ -54,7 +122,7 @@
 
             <section>
                 <div id="welcome">
-                    <div class="container">
+                    <div class="container font-white">
                         WUZZ UP 
                         MY PLACE !
                         Is Always Be Your Place
@@ -62,55 +130,37 @@
                     </div>
                 </div>
                 <div id="body">
-                    <style>
-                        .portfolio-item{
-                            margin-bottom:10px;
-                            border-bottom: 1px solid #eee;
-                            padding-bottom: 25px;
-                        }
-                        .partner img{
-                            margin-bottom: 5px;
-                        }
-                    </style>
                     <div class="container">
                         <div class="row">
                             <div class="col-md-2 partner">
-                                <h2>Our Partner</h2>
-                                <img class="alignleft size-full" src="http://app.myplacemalang.com/images/gallery/partner/34-150x150-margos.jpg" width="80">
-                                <img class="alignleft size-full" src="http://app.myplacemalang.com/images/gallery/partner/35-150x150-kgh.jpg" width="80">
-                                <img class="alignleft size-full" src="http://app.myplacemalang.com/images/gallery/partner/38-150x150-la-cool-moments.jpg" width="80"> 
-                                <img class="alignleft size-full" src="http://app.myplacemalang.com/images/gallery/partner/38-150x150-la-cool-moments.jpg" width="80"> 
+                                <h2 class="font-white">Our Partner</h2>
+                                <img class="size-full" src="http://app.myplacemalang.com/images/gallery/partner/34-150x150-margos.jpg" width="80">
+                                <img class="size-full" src="http://app.myplacemalang.com/images/gallery/partner/35-150x150-kgh.jpg" width="80">
+                                <img class="size-full" src="http://app.myplacemalang.com/images/gallery/partner/38-150x150-la-cool-moments.jpg" width="80"> 
+                                <img class="size-full" src="http://app.myplacemalang.com/images/gallery/partner/38-150x150-la-cool-moments.jpg" width="80"> 
                             </div>
                             <div class="col-md-6">
-                                <div class="col-md-12 portfolio-item">
-                                    <h3>MY KTV</h3>
-                                    <div class="col-md-4">
-                                        <img class="alignleft size-full" src="http://app.myplacemalang.com/images/article/11-150x150-our-ktv.jpg">
-                                    </div>
-                                    <div class="col-md-8" style="text-align: justify;">
-                                        <p>Each room equipped with uptodate best karaoke audio and each room are equipped with 42inch wide LCD,best room interior, lighting and temperature. We also have approx 50.500 music bank and we keep it update ever...</p>
-                                        <a href="/read/site/my-ktv.html" class="btn btn-primary btn-medium" style="float: right;"> Readmore</a>
-                                    </div>
+                                <div class="col-md-12 portfolio-item content-article">
+                                    <h3 class="font-white">MY KTV</h3>
+                                    <img class="alignleft size-full" src="http://app.myplacemalang.com/images/article/11-150x150-our-ktv.jpg">
+                                    <p>Each room equipped with uptodate best karaoke audio and each room are equipped with 42inch wide LCD,best room interior, lighting and temperature. We also have approx 50.500 music bank and we keep it update every month. </p>
+                                    <a href="/read/site/my-ktv.html" class="btn btn-primary btn-medium" style="float: right;"> Readmore</a>
                                 </div>
 
-                                <div class="col-md-12 portfolio-item">
-                                    <h3>MY HOUSE KICKERS</h3>
-                                    <div class="col-md-4">
-                                        <img class="alignleft size-full" src="http://app.myplacemalang.com/images/article/12-150x150-our-beverages.jpg">
-                                    </div>
-                                    <div class="col-md-8" style="text-align: justify;">
-                                        <p>FIVE MINUTES
+                                <div class="col-md-12 portfolio-item content-article">
+                                    <h3 class="font-white">MY HOUSE KICKERS</h3>
+                                    <img class="alignleft size-full" src="http://app.myplacemalang.com/images/article/12-150x150-our-beverages.jpg">
+                                    <p>FIVE MINUTES
 
-                                            Kalo emang ngerasa fit tapi malemnya kurang asik or masih ngebikin bete, gak ada
-                                            salahnya nyobain minuman yang satu ini. Yang isinya campuran dari vodka, ru...
-                                        </p>
-                                        <a href="/read/site/my-house-kickers.html" class="btn btn-primary btn-medium" style="float: right;"> Readmore</a>
-                                    </div>
+                                        Kalo emang ngerasa fit tapi malemnya kurang asik or masih ngebikin bete, gak ada
+                                        salahnya nyobain minuman yang satu ini. Yang isinya campuran dari vodka, ru...
+                                    </p>
+                                    <a href="/read/site/my-house-kickers.html" class="btn btn-primary btn-medium" style="float: right;"> Readmore</a>
                                 </div>
 
                             </div>
-                            <div class="col-md-4">
-                                <h2>Our Location</h2>
+                            <div class="col-md-4 text-left">
+                                <h2 class="font-white">Our Location</h2>
                                 <b>My Place Malang - Pub &amp; Karaoke</b><br>
                                 Jln. Jaksa Agung Suprapto 17, Malang, Jawa Timur<br>
                                 Email : <a href="mailto:info@myplacemalang.com">info@myplacemalang.com</a><br>
@@ -121,13 +171,15 @@
                     </div>
                 </div>
             </section>
-            <div id="footer" style="height: 50px;">
-                <div class="container">
-                    <p style="margin-top: 15px;">
-                        <a href="#">My Place Malang</a> @ 2015 All Right Reserved  .
-                    </p>
+            <footer>
+                <div id="footer">
+                    <div class="container">
+                        <p style="margin-top: 15px;">
+                            <a href="#">My Place Malang</a> @ 2015 All Right Reserved  .
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </footer>
         </div>
 
         <!-- Bootstrap core JavaScript
