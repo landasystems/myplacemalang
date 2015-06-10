@@ -6,7 +6,7 @@
 
 // Slider
 $('.carousel').carousel({
-    interval: 5000
+    interval: 4000
 });
 
 // Header Scroll
@@ -15,7 +15,7 @@ $(function() {
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 500) {
+        if (scroll >= 300) {
             header.removeClass('atas').addClass("atas-pendek");
         } else {
             header.removeClass('atas-pendek').addClass('atas');
