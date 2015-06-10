@@ -1,0 +1,1817 @@
+2015/06/04 14:24:25 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/04 14:24:25 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/04 14:24:25 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/04 14:24:25 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/04 14:24:25 [error] [exception.CException] exception 'CException' with message 'image file not found' in /var/www/landa/sahidmontana_cp/backend/extensions/image/Image.php:73
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/components/LandaCore.php(53): Image->__construct('/var/www/landa/...')
+#1 /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php(154): LandaCore->createImg('article/', 'arjuna-room.png', '5')
+#2 [internal function]: ArticleController->actionUpdate('5')
+#3 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#4 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#5 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CController.php(291): CFilterChain->run()
+#12 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(282): CController->run('update')
+#14 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('article/update')
+#15 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#17 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/article/update/5.html
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/backend/www/sahidmontana/article/update/5.html
+---
+2015/06/04 14:53:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images350x350-noimage.jpgimg/rooms/thumb/ev1.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images350x350-n...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images350x350-noimage.jpgimg/rooms/thumb/ev1.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/
+---
+2015/06/04 14:57:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "imagesarticle/arjuna-room.png-350x350-arjuna-room.pngimg/rooms/thumb/ev1.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('imagesarticle/a...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/imagesarticle/arjuna-room.png-350x350-arjuna-room.pngimg/rooms/thumb/ev1.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/
+---
+2015/06/04 14:57:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "imagesarticle/de-klub-hall.jpg-350x350-de-klub-hall.jpgimg/rooms/thumb/ev1.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('imagesarticle/d...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/imagesarticle/de-klub-hall.jpg-350x350-de-klub-hall.jpgimg/rooms/thumb/ev1.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/
+---
+2015/06/04 14:57:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "imagesarticle/kahuripan-meeting-room.jpg-350x350-kahuripan-meeting-room.jpgimg/rooms/thumb/ev1.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('imagesarticle/k...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/imagesarticle/kahuripan-meeting-room.jpg-350x350-kahuripan-meeting-room.jpgimg/rooms/thumb/ev1.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/
+---
+2015/06/04 14:57:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/arjuna-room.png-350x350-arjuna-room.pngimg/rooms/thumb/ev1.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/arjuna-room.png-350x350-arjuna-room.pngimg/rooms/thumb/ev1.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/
+---
+2015/06/04 14:59:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/4-350x350-de-klub-hall.jpgimg/rooms/thumb/ev1.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/4-350x350-de-klub-hall.jpgimg/rooms/thumb/ev1.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/
+---
+2015/06/04 14:59:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/5-350x350-arjuna-room.pngimg/rooms/thumb/ev1.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/5-350x350-arjuna-room.pngimg/rooms/thumb/ev1.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/
+---
+2015/06/04 14:59:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/2-350x350-kahuripan-meeting-room.jpgimg/rooms/thumb/ev1.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/2-350x350-kahuripan-meeting-room.jpgimg/rooms/thumb/ev1.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/
+---
+2015/06/05 08:23:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CController.php:483
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CController.php(270): CController->missingAction('images')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(282): CController->run('images')
+#2 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('site/images/fav...')
+#3 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/site/images/favicon.ico
+---
+2015/06/05 08:23:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('logo.jpg')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/logo.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/backend/www/sahidmontana/
+---
+2015/06/05 08:29:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CController.php:483
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CController.php(270): CController->missingAction('images')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(282): CController->run('images')
+#2 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('site/images/fav...')
+#3 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/site/images/favicon.ico
+---
+2015/06/05 08:29:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CController.php:483
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CController.php(270): CController->missingAction('images')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(282): CController->run('images')
+#2 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('site/images/fav...')
+#3 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/site/images/favicon.ico
+---
+2015/06/05 08:30:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('logo.jpg')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/logo.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/backend/www/sahidmontana/
+---
+2015/06/05 08:34:26 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:34:26 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:34:26 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:34:26 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:34:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('logo.jpg')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/logo.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/backend/www/sahidmontana/dashboard.html
+---
+2015/06/05 08:36:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('logo.jpg')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/logo.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/backend/www/sahidmontana/dashboard.html
+---
+2015/06/05 08:43:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CController.php:483
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CController.php(270): CController->missingAction('images')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(282): CController->run('images')
+#2 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('site/images/fav...')
+#3 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/site/images/favicon.ico
+---
+2015/06/05 08:43:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CController.php:483
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CController.php(270): CController->missingAction('images')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(282): CController->run('images')
+#2 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('site/images/fav...')
+#3 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/site/images/favicon.ico
+---
+2015/06/05 08:44:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('logo.jpg')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/logo.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/backend/www/sahidmontana/
+---
+2015/06/05 08:44:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('logo.jpg')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/logo.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/backend/www/sahidmontana/
+---
+2015/06/05 08:47:31 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:47:31 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:47:31 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:47:31 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:48:44 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:48:44 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:48:44 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:48:44 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:50:26 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:50:26 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:50:26 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:50:26 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:50:31 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:50:31 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:50:31 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:50:31 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:50:57 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:50:57 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:50:57 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:50:57 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:52:15 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:52:15 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:52:15 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:52:15 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:53:37 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:53:37 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:53:37 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:53:37 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:53:59 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:53:59 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:53:59 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:53:59 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:54:51 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:54:51 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:54:51 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:54:51 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:56:51 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:56:51 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:56:51 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:56:51 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:57:54 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:57:54 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:57:54 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:57:54 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:58:32 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:58:32 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:58:32 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 08:58:32 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:00:24 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:00:24 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:00:24 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:00:24 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:02:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/11-650x650-nasi-goreng-tempong-for-4-pax.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/11-650x650-nasi-goreng-tempong-for-4-pax.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/frontend/web/sahidmontana/promotion.html
+---
+2015/06/05 09:02:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/10-650x650-room-promo.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/10-650x650-room-promo.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/frontend/web/sahidmontana/promotion.html
+---
+2015/06/05 09:02:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/12-650x650-sop-buntut.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/12-650x650-sop-buntut.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/frontend/web/sahidmontana/promotion.html
+---
+2015/06/05 09:02:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/14-650x650-bromo-restaurant.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/14-650x650-bromo-restaurant.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/frontend/web/sahidmontana/promotion.html
+---
+2015/06/05 09:02:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/8-650x650-bromo-amazing-tour.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/8-650x650-bromo-amazing-tour.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/frontend/web/sahidmontana/promotion.html
+---
+2015/06/05 09:02:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/7-650x650-tematic-high-tea.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/7-650x650-tematic-high-tea.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/frontend/web/sahidmontana/promotion.html
+---
+2015/06/05 09:02:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/18-650x650-iga-bakar-sambal-mangga.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/18-650x650-iga-bakar-sambal-mangga.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/frontend/web/sahidmontana/promotion.html
+---
+2015/06/05 09:02:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/15-650x650-wedding-package.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/15-650x650-wedding-package.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/frontend/web/sahidmontana/promotion.html
+---
+2015/06/05 09:02:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/17-650x650-guava-froyo.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/17-650x650-guava-froyo.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/frontend/web/sahidmontana/promotion.html
+---
+2015/06/05 09:03:12 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:03:12 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:03:12 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:03:12 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:07:04 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:07:04 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:07:04 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:07:04 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:08:41 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:08:41 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:08:41 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:08:41 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:09:09 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:09:09 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:09:09 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:09:09 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:09:36 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:09:36 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:09:36 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:09:36 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:11:26 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:11:26 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:11:26 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:11:26 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:14:16 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:14:16 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:14:16 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:14:16 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:14:50 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:14:50 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:14:50 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:14:50 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:15:15 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:15:15 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:15:15 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:15:15 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:15:30 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:15:30 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:15:30 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:15:30 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:16:27 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:16:27 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:16:27 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:16:27 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:17:24 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:17:24 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:17:24 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:17:24 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:21:33 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:21:33 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:21:33 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:21:33 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:22:08 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:22:08 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:22:08 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:22:08 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:23:48 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:23:48 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:23:48 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:23:48 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:26:02 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:26:02 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:26:02 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:26:02 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:27:20 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:27:20 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:27:20 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:27:20 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:28:16 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:28:16 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:28:16 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:28:16 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:29:15 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:29:15 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:29:15 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:29:15 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:31:58 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:31:58 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:31:58 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:31:58 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:33:05 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:33:05 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:33:05 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:33:05 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:38:03 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:38:03 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:38:03 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 09:38:03 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/31-700x700-jalan-sehat.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/31-700x700-jalan-sehat.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/29-700x700-chicken-wing-madu.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/29-700x700-chicken-wing-madu.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/10-700x700-room-promo.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/10-700x700-room-promo.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/12-150x150-sop-buntut.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/12-150x150-sop-buntut.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/5-350x350-arjuna-room.png".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/5-350x350-arjuna-room.png
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/34-700x700-buka-puasa-bersama-anak-yatim.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/34-700x700-buka-puasa-bersama-anak-yatim.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/15-150x150-wedding-package.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/15-150x150-wedding-package.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/8-150x150-bromo-amazing-tour.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/8-150x150-bromo-amazing-tour.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/33-150x150-sahur-on-the-road.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/33-150x150-sahur-on-the-road.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/16-150x150-junior-suite.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/16-150x150-junior-suite.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/35-350x350-asean-tourism.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/35-350x350-asean-tourism.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/28-350x350-roll-bread-fruit.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/28-350x350-roll-bread-fruit.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/30-700x700-bromo-restaurant.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/30-700x700-bromo-restaurant.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/18-150x150-iga-bakar-sambal-mangga.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/18-150x150-iga-bakar-sambal-mangga.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/17-150x150-guava-froyo.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/17-150x150-guava-froyo.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/15-700x700-wedding-package.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/15-700x700-wedding-package.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/9-350x350-deluxe-room.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/9-350x350-deluxe-room.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/2-350x350-kahuripan-meeting-room.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/2-350x350-kahuripan-meeting-room.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/24-150x150-tematic-high-tea.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/24-150x150-tematic-high-tea.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/29-350x350-chicken-wing-madu.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/29-350x350-chicken-wing-madu.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/7-150x150-tematic-high-tea.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/7-150x150-tematic-high-tea.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/13-700x700-superior-room.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/13-700x700-superior-room.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/16-350x350-junior-suite.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/16-350x350-junior-suite.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/5-150x150-arjuna-room.png".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/5-150x150-arjuna-room.png
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/8-700x700-bromo-amazing-tour.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/8-700x700-bromo-amazing-tour.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/14-700x700-bromo-restaurant.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/14-700x700-bromo-restaurant.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/11-350x350-nasi-goreng-tempong-for-4-pax.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/11-350x350-nasi-goreng-tempong-for-4-pax.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/24-700x700-tematic-high-tea.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/24-700x700-tematic-high-tea.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/8-350x350-bromo-amazing-tour.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/8-350x350-bromo-amazing-tour.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/34-150x150-buka-puasa-bersama-anak-yatim.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/34-150x150-buka-puasa-bersama-anak-yatim.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/32-700x700-dirgahayu-kemerdekaan-republik-indonesia.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/32-700x700-dirgahayu-kemerdekaan-republik-indonesia.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/18-350x350-iga-bakar-sambal-mangga.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/18-350x350-iga-bakar-sambal-mangga.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/32-350x350-dirgahayu-kemerdekaan-republik-indonesia.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/32-350x350-dirgahayu-kemerdekaan-republik-indonesia.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/31-150x150-jalan-sehat.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/31-150x150-jalan-sehat.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/30-150x150-bromo-restaurant.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/30-150x150-bromo-restaurant.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/9-700x700-deluxe-room.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/9-700x700-deluxe-room.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/7-700x700-tematic-high-tea.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/7-700x700-tematic-high-tea.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/29-150x150-chicken-wing-madu.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/29-150x150-chicken-wing-madu.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/35-150x150-asean-tourism.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/35-150x150-asean-tourism.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/28-150x150-roll-bread-fruit.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/28-150x150-roll-bread-fruit.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/32-150x150-dirgahayu-kemerdekaan-republik-indonesia.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/32-150x150-dirgahayu-kemerdekaan-republik-indonesia.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/17-700x700-guava-froyo.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/17-700x700-guava-froyo.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/13-150x150-superior-room.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/13-150x150-superior-room.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/7-350x350-tematic-high-tea.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/7-350x350-tematic-high-tea.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/33-700x700-sahur-on-the-road.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/33-700x700-sahur-on-the-road.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/28-700x700-roll-bread-fruit.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/28-700x700-roll-bread-fruit.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/4-150x150-de-klub-hall.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/4-150x150-de-klub-hall.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/12-700x700-sop-buntut.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/12-700x700-sop-buntut.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/34-350x350-buka-puasa-bersama-anak-yatim.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/34-350x350-buka-puasa-bersama-anak-yatim.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/35-700x700-asean-tourism.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/35-700x700-asean-tourism.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/14-350x350-bromo-restaurant.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/14-350x350-bromo-restaurant.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/12-350x350-sop-buntut.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/12-350x350-sop-buntut.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/10-350x350-room-promo.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/10-350x350-room-promo.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/16-700x700-junior-suite.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/16-700x700-junior-suite.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/2-150x150-kahuripan-meeting-room.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/2-150x150-kahuripan-meeting-room.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/17-350x350-guava-froyo.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/17-350x350-guava-froyo.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/15-350x350-wedding-package.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/15-350x350-wedding-package.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/2-700x700-kahuripan-meeting-room.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/2-700x700-kahuripan-meeting-room.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/9-150x150-deluxe-room.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/9-150x150-deluxe-room.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/11-700x700-nasi-goreng-tempong-for-4-pax.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/11-700x700-nasi-goreng-tempong-for-4-pax.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/14-150x150-bromo-restaurant.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/14-150x150-bromo-restaurant.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/31-350x350-jalan-sehat.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/31-350x350-jalan-sehat.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/33-350x350-sahur-on-the-road.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/33-350x350-sahur-on-the-road.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/4-700x700-de-klub-hall.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/4-700x700-de-klub-hall.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/4-350x350-de-klub-hall.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/4-350x350-de-klub-hall.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/11-150x150-nasi-goreng-tempong-for-4-pax.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/11-150x150-nasi-goreng-tempong-for-4-pax.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/24-350x350-tematic-high-tea.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/24-350x350-tematic-high-tea.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/13-350x350-superior-room.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/13-350x350-superior-room.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/18-700x700-iga-bakar-sambal-mangga.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/18-700x700-iga-bakar-sambal-mangga.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/10-150x150-room-promo.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/10-150x150-room-promo.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/30-350x350-bromo-restaurant.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/30-350x350-bromo-restaurant.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 10:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/gallery/5-700x700-arjuna-room.png".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/gallery/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/gallery/5-700x700-arjuna-room.png
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/gallery.html
+---
+2015/06/05 12:46:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CController.php:483
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CController.php(270): CController->missingAction('images')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(282): CController->run('images')
+#2 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('site/images/fav...')
+#3 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/site/images/favicon.ico
+---
+2015/06/05 12:46:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('logo.jpg')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/logo.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/backend/www/sahidmontana/
+---
+2015/06/05 15:09:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CController.php:483
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CController.php(270): CController->missingAction('images')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(282): CController->run('images')
+#2 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('site/images/fav...')
+#3 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/site/images/favicon.ico
+---
+2015/06/05 15:09:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('logo.jpg')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/logo.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/backend/www/sahidmontana/
+---
+2015/06/05 15:23:37 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:23:37 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:23:37 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:23:37 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:26:53 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:26:53 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:26:53 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:26:53 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:30:31 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:30:31 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:30:31 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:30:31 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:33:24 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:33:24 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:33:24 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:33:24 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:35:54 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:35:54 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:35:54 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:35:54 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:37:45 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:37:45 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:37:45 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:37:45 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:42:48 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:42:48 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:42:48 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:42:48 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:49:09 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:49:09 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:49:09 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:49:09 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:52:32 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:52:32 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:52:32 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:52:32 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:54:09 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:54:09 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:54:09 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:54:09 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:55:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('logo.jpg')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/logo.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/backend/www/sahidmontana/
+---
+2015/06/05 15:59:18 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:59:18 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:59:18 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 15:59:18 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:02:11 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:02:11 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:02:11 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:02:11 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:05:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/7-650x650-tematic-high-tea.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/7-650x650-tematic-high-tea.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/news/tematic-high-tea.html
+---
+2015/06/05 16:06:12 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:06:12 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:06:12 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:06:12 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:06:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/7-650x650-tematic-high-tea.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/7-650x650-tematic-high-tea.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/frontend/web/sahidmontana/news/tematic-high-tea.html
+---
+2015/06/05 16:06:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/7-650x650-tematic-high-tea.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/7-650x650-tematic-high-tea.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/frontend/web/sahidmontana/news/tematic-high-tea.html
+---
+2015/06/05 16:06:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/7-650x650-tematic-high-tea.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/7-650x650-tematic-high-tea.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/frontend/web/sahidmontana/news/tematic-high-tea.html
+---
+2015/06/05 16:07:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/7-650x650-tematic-high-tea.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/7-650x650-tematic-high-tea.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/frontend/web/sahidmontana/news/tematic-high-tea.html
+---
+2015/06/05 16:07:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/7-650x650-tematic-high-tea.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/7-650x650-tematic-high-tea.jpg
+---
+2015/06/05 16:07:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/images/favicon.ico".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/images/favicon.ico
+---
+2015/06/05 16:07:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/7-650x650-tematic-high-tea.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/7-650x650-tematic-high-tea.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/frontend/web/sahidmontana/news/tematic-high-tea.html
+---
+2015/06/05 16:08:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article/7-650x650-tematic-high-tea.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/article/...')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/images/article/7-650x650-tematic-high-tea.jpg
+HTTP_REFERER=http://192.168.1.103/landa/sahidmontana_cp/frontend/web/sahidmontana/news/tematic-high-tea.html
+---
+2015/06/05 16:15:11 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:15:11 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:15:11 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:15:11 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:17:08 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:17:08 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:17:08 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:17:08 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:19:29 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:19:29 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:19:29 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:19:29 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:22:30 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:22:30 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:22:30 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:22:30 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:24:04 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:24:04 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:24:04 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:24:04 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:26:05 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:26:05 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:26:05 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:26:05 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:27:41 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:27:41 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:27:41 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:27:41 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:31:57 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:31:57 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:31:57 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:31:57 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:34:10 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:34:10 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:34:10 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:34:10 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (146)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:41:08 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:41:08 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:41:08 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:41:08 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:48:20 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:48:20 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:48:20 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:48:20 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:53:06 [warning] [application] Failed to set unsafe attribute "publish" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:53:06 [warning] [application] Failed to set unsafe attribute "description" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:53:06 [warning] [application] Failed to set unsafe attribute "keyword" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/05 16:53:06 [warning] [application] Failed to set unsafe attribute "primary_image" of "Article".
+in /var/www/landa/sahidmontana_cp/backend/controllers/ArticleController.php (109)
+in /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php (16)
+2015/06/06 08:18:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CController.php:483
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CController.php(270): CController->missingAction('images')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(282): CController->run('images')
+#2 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('site/images/fav...')
+#3 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/site/images/favicon.ico
+---
+2015/06/06 08:19:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo.jpg".' in /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/landa/sahidmontana_cp/backend/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('logo.jpg')
+#1 /var/www/landa/sahidmontana_cp/backend/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/landa/sahidmontana_cp/backend/www/sahidmontana/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/landa/sahidmontana_cp/backend/www/sahidmontana/logo.jpg
+HTTP_REFERER=http://localhost/landa/sahidmontana_cp/backend/www/sahidmontana/
+---
