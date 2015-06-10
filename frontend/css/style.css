@@ -66,6 +66,10 @@ header.carousel .fill {
     background-size: cover;
 }
 
+.breadcrumb{
+    background-color: #252525;
+}
+
 .carousel-inner>.item>img{
     height: 100%;
 }
