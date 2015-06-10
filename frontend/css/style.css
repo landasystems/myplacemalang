@@ -13,20 +13,27 @@ body {
     height: 100%;
     background-color: #333333;
     font: normal 14px/22px 'Open Sans';
-    color: #ffffff;
+    color: #000;
+}
+
+h2{
+    font: bold 47px/57px 'Titillium Web', sans-serif;
+    letter-spacing: -1px;
+    color: #000;
+    text-transform: uppercase;
 }
 
 h3{
-    font: bold 32px/42px 'Titillium Web', sans-serif;
-    color: #ffffff;
+    font: bold 22px/32px 'Titillium Web', sans-serif;
+    color: #000;
     letter-spacing: -1px;
     text-transform: uppercase;
 }
 
-h2{
-    font: bold 57px/67px 'Titillium Web', sans-serif;
+h4{
+    font: bold 17px/27px 'Titillium Web', sans-serif;
     letter-spacing: -1px;
-    color: #ffffff;
+    color: #000;
     text-transform: uppercase;
 }
 
@@ -76,23 +83,6 @@ header.carousel .fill {
     font-size: 100px;
 }
 
-.price {
-    display: block;
-    font-size: 50px;
-    line-height: 50px;
-}
-
-.price sup {
-    top: -20px;
-    left: 2px;
-    font-size: 20px;
-}
-
-.period {
-    display: block;
-    font-style: italic;
-}
-
 .atas{
     height: 110px;
 }
@@ -111,17 +101,26 @@ header.carousel .fill {
 }
 
 .content-body{
+    background-color: #fff;
     margin-top: 45px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
 }
 
 /* Footer Styles */
 
 footer {
+    border-top: 5px solid #d0aa65;
     margin: 0px;
     margin-top: 50px;
     background-color: #101010;
 }
+footer a{
+    color: #cfda65;
+}
 .footer{
+    color: #fff;
     height: 50px;
     margin-top: 20px;
 }
@@ -138,15 +137,15 @@ footer {
 @media(max-width:767px) {
     h3{
         font: bold 22px/32px 'Titillium Web', sans-serif;
-        color: #ffffff;
-        letter-spacing: -1px;
+        color: #000;
+        letter-spacing: -2px;
         text-transform: uppercase;
     }
 
     h2{
         font: bold 47px/57px 'Titillium Web', sans-serif;
-        letter-spacing: -1px;
-        color: #ffffff;
+        letter-spacing: -2px;
+        color: #000;
         text-transform: uppercase;
     }
 
@@ -177,9 +176,5 @@ footer {
 
     .content-body{
         margin-top: 0px;
-    }
-
-    #myCarousel{
-
     }
 }
