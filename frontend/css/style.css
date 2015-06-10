@@ -1,7 +1,6 @@
 /*!
  * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ * Develop By Tindik @ 2015
  */
 
 /* Global Styles */
@@ -14,6 +13,13 @@ body {
     background-color: #333333;
     font: normal 14px/22px 'Open Sans';
     color: #000;
+}
+
+h1{
+    font: bold 67px/77px 'Titillium Web', sans-serif;
+    letter-spacing: -1px;
+    color: #000;
+    text-transform: uppercase;
 }
 
 h2{
@@ -42,7 +48,8 @@ body {
 }
 
 header.carousel {
-    height: 350px;
+    height: 500px;
+    margin-top: -50px
 }
 
 header.carousel .item,
@@ -58,9 +65,19 @@ header.carousel .fill {
     background-size: cover;
 }
 
+.carousel-inner>.item>img{
+    height: 100%;
+}
+
 .menu{
-    background-color: #222;
     margin-top: 30px;
+}
+
+.background-transparant{
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 }
 
 .slide{
@@ -96,7 +113,6 @@ header.carousel .fill {
 }
 
 .atas-pendek .menu{
-    background-color: #222;
     margin-top: 0px;
 }
 
@@ -106,18 +122,51 @@ header.carousel .fill {
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 20px;
+    -webkit-box-shadow: 3px -2px 45px 17px rgba(0,0,0,0.31);
+    -moz-box-shadow: 3px -2px 45px 17px rgba(0,0,0,0.31);
+    box-shadow: 3px -2px 45px 17px rgba(0,0,0,0.31);
+}
+
+img.alignleft {
+    margin: 5px 10px 10px 0;
+    border: 15px solid #3f3f3f;
+}
+.alignleft {
+    float: left;
+    margin: 5px 20px 10px 0;
+}
+.list-event{
+    margin-bottom: 25px;
+}
+.month{
+    text-align: right;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.date{
+    text-align: right;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.img-bottom{
+    margin-bottom: 3px;
+}
+
+#twitter-widget-0{
+    height: 320px;
 }
 
 /* Footer Styles */
 
 footer {
-    border-top: 5px solid #d0aa65;
+    border-top: 5px solid #030504;
     margin: 0px;
     margin-top: 50px;
     background-color: #101010;
 }
 footer a{
-    color: #cfda65;
+    color: #d0aa65;
 }
 .footer{
     color: #fff;
@@ -175,6 +224,10 @@ footer a{
     }
 
     .content-body{
+        margin-top: 0px;
+    }
+    
+    footer{
         margin-top: 0px;
     }
 }
