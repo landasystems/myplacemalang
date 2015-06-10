@@ -9,6 +9,23 @@
 html,
 body {
     height: 100%;
+    background-color: #333333;
+    font: normal 14px/22px 'Open Sans';
+    color: #ffffff;
+}
+
+h3{
+    font: bold 32px/42px 'Titillium Web', sans-serif;
+    color: #ffffff;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+h2{
+    font: bold 57px/67px 'Titillium Web', sans-serif;
+    letter-spacing: -1px;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 
 body {
