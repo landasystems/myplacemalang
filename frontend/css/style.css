@@ -137,6 +137,13 @@ img.alignleft {
 }
 .list-event{
     margin-bottom: 25px;
+    padding: 10px;
+    padding-left: 0px;
+}
+.list-event:hover{
+    background-color: #337ab7;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 }
 .month{
     text-align: right;
@@ -156,7 +163,6 @@ img.alignleft {
 .navbar-right{
     font: bold 20px 'Titillium Web', sans-serif;
 }
-
 .icon-social{
     margin-right: 0px;
     padding: 10px;
