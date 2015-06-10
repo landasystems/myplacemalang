@@ -153,6 +153,10 @@ img.alignleft {
     margin-bottom: 3px;
 }
 
+.navbar-right{
+    font: bold 20px 'Titillium Web', sans-serif;
+}
+
 #twitter-widget-0{
     height: 320px;
 }
