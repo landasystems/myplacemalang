@@ -34,25 +34,6 @@ body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
-.menu{
-    background-color: #222;
-    margin-top: 30px;
-}
-
-.slide{
-    margin-top: 20px;
-}
-
-.img-portfolio {
-    margin-bottom: 30px;
-}
-
-.img-hover:hover {
-    opacity: 0.8;
-}
-
-/* Home Page Carousel */
-
 header.carousel {
     height: 350px;
 }
@@ -70,13 +51,30 @@ header.carousel .fill {
     background-size: cover;
 }
 
-/* 404 Page Styles */
+.menu{
+    background-color: #222;
+    margin-top: 30px;
+}
+
+.slide{
+    margin-top: 20px;
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+.navbar{
+    border-bottom: none;
+}
 
 .error-404 {
     font-size: 100px;
 }
-
-/* Pricing Page Styles */
 
 .price {
     display: block;
@@ -98,6 +96,19 @@ header.carousel .fill {
 .atas{
     height: 110px;
 }
+.atas-pendek{
+    height: 0px;
+}
+
+.atas-pendek img{
+    max-width: 80px;
+    margin-top: -10px;
+}
+
+.atas-pendek .menu{
+    background-color: #222;
+    margin-top: 0px;
+}
 
 .content-body{
     margin-top: 45px;
@@ -106,7 +117,13 @@ header.carousel .fill {
 /* Footer Styles */
 
 footer {
-    margin: 50px 0;
+    margin: 0px;
+    margin-top: 50px;
+    background-color: #101010;
+}
+.footer{
+    height: 50px;
+    margin-top: 20px;
 }
 
 /* Responsive Styles */
@@ -119,6 +136,20 @@ footer {
 }
 
 @media(max-width:767px) {
+    h3{
+        font: bold 22px/32px 'Titillium Web', sans-serif;
+        color: #ffffff;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+    }
+
+    h2{
+        font: bold 47px/57px 'Titillium Web', sans-serif;
+        letter-spacing: -1px;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
     .img-portfolio {
         margin-bottom: 15px;
     }
@@ -141,10 +172,14 @@ footer {
     }
 
     header.carousel {
-        height: 0px;
+        display: none;
     }
 
     .content-body{
         margin-top: 0px;
+    }
+
+    #myCarousel{
+
     }
 }
