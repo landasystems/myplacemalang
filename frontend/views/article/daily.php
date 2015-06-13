@@ -10,13 +10,13 @@ use yii\data\ActiveDataProvider;
 use yii\web\UrlManager;
 
 $session = Yii::$app->session;
-$daily = Article::findOne(['id' => 299]);
+$daily = Article::findOne(['id' => 229]);
 ?>
 <div class="container content-body">
     <div class="row">
         <div class="col-md-12">
             <h3 class="page-header">
-                <?= $daily->title; ?>
+                <?php echo $daily->title; ?>
             </h3>
             <ol class="breadcrumb">
                 <li><a href="<?= Yii::$app->homeUrl ?>">Home</a></li>
