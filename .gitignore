@@ -5,3 +5,8 @@
 /frontend/runtime/
 /frontend/web/myplacemalang/assets/
 /common/config/
+/app/backend/assets/
+/app/backend/runtime/
+/assets/
+/frontend/config/
+/app/backend/config/

@@ -46,10 +46,10 @@ $session = Yii::$app->session;
             
             <div class="row list-event">
                 <a href="<?= Yii::$app->urlManager->createUrl('article/' . $item->id) ?>">
-                    <div class="col-md-5">
+                    <div class="col-md-6">
                         <img src=<?php echo (!empty($item->primary_image)) ? Yii::$app->homeUrl .'/images/event/'.$item->primary_image : Yii::$app->homeUrl . 'images/700x700-noimage.jpg'?> style="max-height: 150px;" class="img-polaroid">
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-6">
                         <h3 class="month"><?php echo date('F', strtotime($item->date_event)); ?></h3>
                         <h1 class="date"><?php echo date('d', strtotime($item->date_event)); ?></h1>
                     </div>

@@ -34,7 +34,7 @@ $session = Yii::$app->session;
             <div class="col-md-1 text-center">
                 <p><i class="fa fa-file-text fa-4x"></i>
                 </p>
-                <p><?php echo date('F d, Y', strtotime($item->modified)); ?></p>
+                <p><?php echo date('F d, Y', strtotime($item->created)); ?></p>
             </div>
             <div style ='overflow-y: hidden;' class="col-md-3">
                 <center>

@@ -4,87 +4,100 @@ use common\models\User;
 
 $this->title = $model->title;
 ?>
-<div class="j-menu-container"></div>
+<div class="container content-body">
 
-<div class="l-main-container">
-    <div class="b-breadcrumbs f-breadcrumbs">
-        <div class="container">
-            <ul>
-                <li><a href=""><i class="fa fa-home"></i>Home</a></li>
-                <li><i class="fa fa-angle-right"></i><?= $this->title ?></li>
-            </ul>
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="page-header">
+                <?= $this->title ?>
+            </h3>
+            <ol class="breadcrumb">
+                <li><a href="<?= Yii::$app->homeUrl ?>">Home</a>
+                </li>
+                <li><a href="<?= Yii::$app->urlManager->createUrl('article/index') ?>">News</a>
+                </li>
+                <li class="active"><?= $this->title ?></li>
+            </ol>
         </div>
     </div>
-    <div class="l-inner-page-container">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9 col-md-push-3">
-                    <?php if (!empty($model->primary_image)) { ?>
-                        <div class="b-slidercontainer">
-                            <div class="j-contentwidthslider">
-                                <ul>
-                                    <li>
-                                        <img data-retina src="<?= Yii::$app->homeUrl . 'images/article/' . $model->primary_image; ?>">
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    <?php } ?>
-                    <div class="b-article-box">
-                        <div class="f-article_title f-primary-l b-title-b-hr">
-                            <?= $model->title ?>
-                        </div>
-                        <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text f-primary-b">
-                            Oleh <a href="#" class="f-more"><?= $model->user->name ?></a> Kategori :  <a href="" class="f-more"><?= $model->category->name ?></a> Dispoting pada <?= date('d F Y', strtotime($model->created)) ?>
-                            <!--<a href="" class="f-more b-blog-listing__additional-text f-primary"><i class="fa fa-comment"></i>12 Comments</a>-->
-                        </div>
-                        <div class="b-article__description">
-                            <?= $model->content ?>
-                        </div>
+    <!-- /.row -->
 
-                    </div>
+    <!-- Content Row -->
+    <div class="row">
 
-                </div>
-                <div class="col-md-3 col-md-pull-9">
+        <!-- Blog Post Content Column -->
+        <div class="col-lg-8">
 
-                    <div class="row b-col-default-indent">
-                        <div class="col-md-12">
-                            <h4 class="f-primary-b b-h4-special f-h4-special--gray f-h4-special">Informasi Terbaru</h4>
+            <!-- Blog Post -->
 
-                            <div class="b-blog-short-post b-blog-short-post--img-hover-bordered b-blog-short-post--w-img f-blog-short-post--w-img row">
-                                <div class="b-blog-short-post b-blog-short-post--img-hover-bordered b-blog-short-post--w-img f-blog-short-post--w-img row-fluid">
-                                    <?php
-                                    $lastPost = common\models\Article::find()
-                                            ->where([
-                                                'publish' => 1,
-                                                'article_category_id' => ['14', '10']
-                                            ])
-                                            ->orderBy('created DESC')
-                                            ->limit(10)
-                                            ->all();
-                                    foreach ($lastPost as $isi):
-                                        ?>
-                                        <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
-                                            <div class="b-blog-short-post__item_img">
-                                                <a href="#"><img class="img-thumbnail" data-retina src="<?= (!empty($isi->primary_image)) ? Yii::$app->homeUrl . 'images/article/' . $isi->primary_image : Yii::$app->homeUrl . 'images/700x700-noimage.jpg' ?>" width="70px" height="70px" alt=""/></a>
-                                            </div>
-                                            <div class="b-remaining">
-                                                <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
-                                                    <a href="<?= Yii::$app->urlManager->createUrl('article/' . $isi->id) ?>"><?= $isi->title ?></a>
-                                                </div>
-                                                <div class="b-blog-short-post__item_date f-blog-short-post__item_date f-primary-it">
-                                                    <?= date('d F Y', strtotime($isi->created)) ?>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    <?php endforeach; ?>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <hr>
 
-                </div>
-            </div>
+            <!-- Date/Time -->
+            <p><i class="fa fa-clock-o"></i> Posted on <?php echo date('F d, Y', strtotime($model->created)); ?></p>
+
+            <hr>
+            <?php if (!empty($model->primary_image)) { ?>
+                <!-- Preview Image -->
+                <img class="img-responsive" src="<?= $model->primary_image ?>" alt="">
+                <hr>
+            <?php } ?>
+
+
+
+            <?= $model->content ?>
+                <!--<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>-->
+
+            <hr>
+
+            <!-- Blog Comments -->
+
+
+            <!-- Posted Comments -->
+
+            <!-- Comment -->
+
+
         </div>
+
+        <!-- Blog Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+            <hr>
+            <h4>Berita Terbaru</h4>
+            <hr>
+
+            <?php
+            $news = common\models\Article::find()
+                    ->where([
+                        'publish' => 1,
+                        'article_category_id' => [1, 36]
+                    ])
+                    ->orderBy('created DESC')
+                    ->limit(3)
+                    ->all();
+
+            foreach ($news as $item) {
+                ?>
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="<?= Yii::$app->urlManager->createUrl('article/' . $item->id) ?>" >
+                            <img class="alignleft size-full" src=<?php echo (!empty($item->primary_image)) ? Yii::$app->homeUrl . '/images/event/' . $item->primary_image : Yii::$app->homeUrl . 'images/700x700-noimage.jpg' ?> width="100">
+                            <p align="justify"><b><?= $item->title; ?></b></p>
+                        </a>
+                        <i class="glyphicon glyphicon-calendar"></i>  <?= date('d-m-Y', strtotime($item->created)) ?>
+
+
+
+                    </div>
+                </div>
+                <hr>
+            <?php } ?>
+
+        </div>
+
     </div>
+
 </div>
