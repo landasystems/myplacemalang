@@ -71,7 +71,7 @@ $this->widget('bootstrap.widgets.TbGridView',array(
 	'id'=>'Article-grid',
 	'dataProvider'=>$model->search(),
         'type'=>'striped bordered condensed',
-        'template'=>'{summary}{pager}{items}{pager}',
+        'template'=>'{summary}{items}{pager}',
 	'columns'=>array(
             array(
                     'class' => 'CCheckBoxColumn',

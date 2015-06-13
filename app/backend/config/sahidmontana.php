@@ -1,12 +1,12 @@
 <?php
 //=========change this scope=========================================================
-$root = '/var/www/landa/sahidmontana_cp/backend/';
-$themesUrl = 'http://192.168.1.103/landa/sahidmontana_cp/backend/themes/';;
-$db = 'landa_cms_sahidmontana';
+$root = '/var/www/ProjectKerja/myplacemalang/app/backend/';
+$themesUrl = 'http://localhost/ProjectKerja/myplacemalang/app/backend/themes/';;
+$db = 'landa_cms_myplace';
 $dbUser = 'root';
-$dbPwd = 'bismillah';
-$client = 'sahidmontana';
-$clientName = 'Sahid Montana';
-$rootUrl = 'http://192.168.1.103/landa/sahidmontana/backend/www/'.$client.'/';
+$dbPwd = 'landak';
+$client = 'myplacemalang';
+$clientName = 'My Place Malang';
+$rootUrl = 'http://localhost/ProjectKerja/myplacemalang/app/backend/www/'.$client.'/';
 //===================================================================================
 ?>

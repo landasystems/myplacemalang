@@ -1,4 +1,7 @@
 /nbproject/private/
-/images/event/
-/images/galeri/
-/images/article/
+/backend/config/
+/backend/runtime/
+/backend/www/myplacemalang/assets/
+/frontend/runtime/
+/frontend/web/myplacemalang/assets/
+/common/config/

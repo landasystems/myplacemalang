@@ -54,6 +54,7 @@ class ArticleCategoryController extends Controller {
 
                 $child = new ArticleCategory;
                 $child->attributes = $_POST['ArticleCategory'];
+                $child->attributes = $_POST['publish'];
 
                 if ($child->appendTo($root))
                     $this->redirect(array('view', 'id' => $child->id));
@@ -77,24 +78,12 @@ class ArticleCategoryController extends Controller {
     public function actionUpdate($id) {
         $model = $this->loadModel($id);
 
-        // Uncomment the following line if AJAX validation is needed
-        // $this->performAjaxValidation($model);
-//        if (isset($_POST['ArticleCategory'])) {
-//            if ($_POST['parentid']) {
-//                # code...
-//                echo 'aaaaaa';
-//            } else {
-//                echo 'bbbbbb';
-//            }
-//            $model->attributes = $_POST['ArticleCategory'];
-//            if ($model->save())
-//                $this->redirect(array('view', 'id' => $model->id));
-//        }
         if (isset($_POST['ArticleCategory'])) {
             if ($_POST['ArticleCategory']['parent_id']) {
                 $root = $model->findByPk($_POST['ArticleCategory']['parent_id']);
                 
                 $model->attributes = $_POST['ArticleCategory'];
+                $model->attributes = $_POST['publish'];
                 
                 if ($model->saveNode()) {
                     $model->moveAsFirst($root);
@@ -151,8 +140,7 @@ class ArticleCategoryController extends Controller {
      * Lists all models.
      */
     public function actionIndex() {
-        $session = new CHttpSession;
-        $session->open();
+       
         $criteria = new CDbCriteria();
 
         $model = new ArticleCategory('search');
@@ -169,7 +157,6 @@ class ArticleCategoryController extends Controller {
                 $criteria->addCondition('name = "' . $model->name . '"');
         }
 
-        $session['ArticleCategory_records'] = ArticleCategory::model()->findAll($criteria);
 
         $this->render('index', array(
             'model' => $model,

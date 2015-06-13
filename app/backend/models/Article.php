@@ -45,10 +45,10 @@ class Article extends CActiveRecord {
             array('article_category_id', 'numerical', 'integerOnly' => true),
             array('title', 'length', 'max' => 100),
             array('created_user_id', 'length', 'max' => 11),
-            array('created, modified, param, alias', 'safe'),
+            array('created, modified, date_event, param, alias', 'safe'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, title, publish, article_category_id, content, primary_image, created, created_user_id, modified,description, keyword', 'safe', 'on' => 'search'),
+            array('id, title, publish, date_event, article_category_id, content, primary_image, created, created_user_id, modified,description, keyword', 'safe', 'on' => 'search'),
             array('primary_image', 'unsafe'),
 //            array('primary_image', 'file', 'types' => 'jpg, gif, png, jpeg'),
         );
@@ -94,6 +94,7 @@ class Article extends CActiveRecord {
         $criteria->compare('title', $this->title, true);
         $criteria->compare('article_category_id', $this->article_category_id);
         $criteria->compare('publish', $this->publish);
+        $criteria->compare('date_event', $this->date_event);
         $criteria->compare('content', $this->content, true);
         $criteria->compare('primary_image', $this->primary_image, true);
         $criteria->compare('created', $this->created, true);
