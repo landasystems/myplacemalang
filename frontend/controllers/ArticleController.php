@@ -25,10 +25,15 @@ class ArticleController extends Controller {
         }
     }
 
+    public function actionEvent() {
+        $this->layout = 'main';
+        return $this->render('event');
+    }
+
     public function actionIndex() {
         $this->layout = 'main';
         $query = Article::find()
-                ->where(['article_category_id' => [1,36]])
+                ->where(['article_category_id' => [1, 36]])
                 ->orderBy('created DESC');
         $pagination = new Pagination([
             'defaultPageSize' => 5,
@@ -54,20 +59,10 @@ class ArticleController extends Controller {
         return $this->render('about', [
         ]);
     }
+
     public function actionDaily() {
         $this->layout = 'main';
         return $this->render('daily', [
-        ]);
-    }
-
-    public function actionGuruSiswa() {
-        $this->layout = 'main';
-        $model = Article::findOne([
-                    'id' => 17
-        ]);
-        $this->addHits($model);
-        return $this->render('guruSiswa', [
-                    'model' => $model
         ]);
     }
 
@@ -82,6 +77,7 @@ class ArticleController extends Controller {
         return $this->render('contact', [
         ]);
     }
+
     public function actionMyktv() {
         $this->layout = 'main';
         return $this->render('myktv', [
@@ -97,6 +93,18 @@ class ArticleController extends Controller {
     public function addHits($model) {
         $model->hits++;
         $model->save();
+    }
+
+    public function actionGetevent() {
+        $query = Article::find()
+                        ->where(['article_category_id' => 1, 'publish' => 1])
+                        ->orderBy('date_event DESC')->all();
+        $data = array();
+        foreach ($query as $val) {
+            $data[] = array('title' => $val->title, 'start' => $val->date_event, 'url' => Yii::$app->urlManager->createUrl('article/' . $val->id));
+        }
+
+        return json_encode($data);
     }
 
 }
