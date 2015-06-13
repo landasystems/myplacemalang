@@ -1,5 +1,5 @@
 <?php
-$this->title = 'Sarana dan Prasarana';
+$this->title = 'Daily Event';
 
 use common\models\ArticleCategory;
 use common\models\Article;

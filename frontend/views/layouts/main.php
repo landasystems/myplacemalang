@@ -17,7 +17,7 @@ AppAsset::register($this);
 
     <head>
 
-        <title><?= Html::encode($this->title) ?></title>
+        <title>My Place - <?= Html::encode($this->title) ?></title>
         <meta charset="<?= Yii::$app->charset ?>">
         <link rel="shortcut icon" href="<?= Yii::$app->homeUrl ?>images/favicon.ico">
         <?= Html::csrfMetaTags() ?>

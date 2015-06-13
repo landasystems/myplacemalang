@@ -1,6 +1,6 @@
 <?php
 /* @var $this yii\web\View */
-$this->title = 'MY HOUSE KICKERS';
+$this->title = 'My House Kickers';
 
 use common\models\ArticleCategory;
 use common\models\Article;
