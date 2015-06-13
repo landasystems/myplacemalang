@@ -54,6 +54,11 @@ class ArticleController extends Controller {
         return $this->render('about', [
         ]);
     }
+    public function actionDaily() {
+        $this->layout = 'main';
+        return $this->render('daily', [
+        ]);
+    }
 
     public function actionGuruSiswa() {
         $this->layout = 'main';
