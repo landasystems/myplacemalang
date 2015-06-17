@@ -38,7 +38,7 @@ $session = Yii::$app->session;
             </div>
             <div style ='overflow-y: hidden;' class="col-md-3">
                 <center>
-                <a href="<?= Yii::$app->urlManager->createUrl('article/' . $item->id) ?>" class="">
+                <a href="<?= Yii::$app->urlManager->createUrl('app/backend/iamges/article/' . $item->id) ?>" class="">
                     <?php $image = (!empty($item->primary_image)) ? Yii::$app->homeUrl . '/images/event/' . $item->primary_image : Yii::$app->homeUrl . 'images/700x700-noimage.jpg' ?> 
 
                     <img class="img-responsive img-hover " src="<?= $image; ?>" style="width:80%;" alt="">

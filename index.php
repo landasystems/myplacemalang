@@ -9,7 +9,7 @@ require(__DIR__ . '/frontend/config/bootstrap.php');
 
 $config = yii\helpers\ArrayHelper::merge(
     require(__DIR__ . '/common/config/main.php'),
-    require(__DIR__ . '/common/config/db-tamanharapan.php'),
+    require(__DIR__ . '/common/config/db-myplacemalang.php'),
     require(__DIR__ . '/frontend/config/main.php'),
     require(__DIR__ . '/frontend/config/main-tamanharapan.php')
 );
