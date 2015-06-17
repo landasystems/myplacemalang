@@ -39,7 +39,7 @@ $this->title = $model->title;
             <hr>
             <?php if (!empty($model->primary_image)) { ?>
                 <!-- Preview Image -->
-                <img class="img-responsive" src="<?= $model->primary_image ?>" alt="">
+                <center><img class="img-responsive" src="<?= $model->ImgMedium ?>" alt=""></center>
                 <hr>
             <?php } ?>
 
@@ -84,7 +84,7 @@ $this->title = $model->title;
                 <div class="row">
                     <div class="col-md-12">
                         <a href="<?= Yii::$app->urlManager->createUrl('article/' . $item->id) ?>" >
-                            <img class="alignleft size-full" src=<?php echo (!empty($item->primary_image)) ? Yii::$app->homeUrl . '/images/event/' . $item->primary_image : Yii::$app->homeUrl . 'images/700x700-noimage.jpg' ?> width="100">
+                            <img class="alignleft size-full" src=<?php echo (!empty($item->primary_image)) ?  $item->ImgSmall : Yii::$app->homeUrl . 'images/700x700-noimage.jpg' ?> width="100">
                             <p align="justify"><b><?= $item->title; ?></b></p>
                         </a>
                         <i class="glyphicon glyphicon-calendar"></i>  <?= date('d-m-Y', strtotime($item->created)) ?>
