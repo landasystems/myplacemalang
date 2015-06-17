@@ -33,6 +33,15 @@ AppAsset::register($this);
         <!-- image CSS -->
         <link type="text/css"  href="<?= Yii::$app->homeUrl ?>css/jquery.lighter.css" rel="stylesheet">
 
+        <!-- Event CSS -->
+        <link type="text/css"  href="<?= Yii::$app->homeUrl ?>css/fullcalendar.min.css" rel="stylesheet">
+
+        <script src="<?= Yii::$app->homeUrl ?>js/jquery.js"></script>
+        <script src="<?= Yii::$app->homeUrl ?>js/bootstrap.min.js"></script>
+        <script src="<?= Yii::$app->homeUrl ?>js/main.js"></script>
+        <script src="<?= Yii::$app->homeUrl ?>js/jquery.lighter.js"></script>
+        <script src="<?= Yii::$app->homeUrl ?>js/moment.min.js"></script>
+        <script src="<?= Yii::$app->homeUrl ?>js/fullcalendar.min.js"></script>
     </head>
     <body>
         <?php $this->beginBody() ?>
@@ -99,11 +108,7 @@ AppAsset::register($this);
                     </div>
                 </div>
             </div>
-        </footer>
-        <script src="<?= Yii::$app->homeUrl ?>js/jquery.js"></script>
-        <script src="<?= Yii::$app->homeUrl ?>js/bootstrap.min.js"></script>
-        <script src="<?= Yii::$app->homeUrl ?>js/main.js"></script>
-        <script src="<?= Yii::$app->homeUrl ?>js/jquery.lighter.js"></script>
+        </footer>        
     </body>
     <?php $this->endBody() ?>
 </html>
