@@ -77,5 +77,27 @@ class Article extends \yii\db\ActiveRecord
     public function getCategory(){
         return $this->hasOne(ArticleCategory::className(), ['id' => 'article_category_id']);
     }
-    
+    public function getImgSmall() {
+        if (empty($this->primary_image)) {
+            return Yii::$app->params['urlImg'] . '/150x150-noimage.jpg';
+        } else {
+            return Yii::$app->params['urlImg'] . '/article/' . $this->id . '-150x150-' . Yii::$app->landa->urlParsing($this->primary_image);
+        }
+    }
+
+    public function getImgMedium() {
+        if (empty($this->primary_image)) {
+            return Yii::$app->params['urlImg'] . '/350x350-noimage.jpg';
+        } else {
+            return Yii::$app->params['urlImg'] . '/article/' . $this->id . '-350x350-' . Yii::$app->landa->urlParsing($this->primary_image);
+        }
+    }
+
+    public function getImgBig() {
+        if (empty($this->primary_image)) {
+            return Yii::$app->params['urlImg'] . '/700x700-noimage.jpg';
+        } else {
+            return Yii::$app->params['urlImg'] . '/article/' . $this->id . '-700x700-' . Yii::$app->landa->urlParsing($this->primary_image);
+        }
+    }
 }

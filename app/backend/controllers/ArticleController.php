@@ -147,6 +147,7 @@ class ArticleController extends Controller {
             $model->alias = landa()->urlParsing($model->title);
             $model->keyword = $_POST['Article']['keyword'];
             $model->description = $_POST['Article']['description'];
+            $model->publish = $_POST['Article']['publish'];
             $file = CUploadedFile::getInstance($model, 'primary_image');
             if (is_object($file)) {
                 $model->primary_image = Yii::app()->landa->urlParsing($model->title) . '.' . $file->extensionName;

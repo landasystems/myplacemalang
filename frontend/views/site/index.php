@@ -46,10 +46,10 @@ $session = Yii::$app->session;
             
             <div class="row list-event">
                 <a href="<?= Yii::$app->urlManager->createUrl('article/' . $item->id) ?>">
-                    <div class="col-md-5">
-                        <img src=<?php echo (!empty($item->primary_image)) ? Yii::$app->homeUrl .'/images/event/'.$item->primary_image : Yii::$app->homeUrl . 'images/700x700-noimage.jpg'?> style="max-height: 150px;" class="img-polaroid">
+                    <div class="col-md-6" style="overflow: hidden; height:150px">
+                        <img src=<?php echo (!empty($item->primary_image)) ?  $item->imgSmall : Yii::$app->homeUrl . 'images/700x700-noimage.jpg'?> style="width: 100%;" class="img-polaroid">
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-6">
                         <h3 class="month"><?php echo date('F', strtotime($item->date_event)); ?></h3>
                         <h1 class="date"><?php echo date('d', strtotime($item->date_event)); ?></h1>
                     </div>
@@ -86,11 +86,11 @@ $session = Yii::$app->session;
             <h3 class="page-header"><?=$item->title;?></h3>
             <div class="row">
                 <div class="col-md-12">
-                    <img class="alignleft size-full" src=<?php echo (!empty($item->primary_image)) ? Yii::$app->homeUrl .'/images/event/'.$item->primary_image : Yii::$app->homeUrl . 'images/700x700-noimage.jpg'?> width="100">
+                    <img class="alignleft size-full" src=<?php echo (!empty($item->primary_image)) ? $item->imgSmall : Yii::$app->homeUrl . 'images/700x700-noimage.jpg'?> width="100">
                     <p align="justify">
                     <?=substr(strip_tags($item->content), 0, 145). " . . ."; ?>
                     </p>
-                    <i class="glyphicon glyphicon-calendar">  <?=date('d-m-Y',strtotime($item->modified))?></i>
+                    <i class="glyphicon glyphicon-calendar">  <?=date('d-m-Y',strtotime($item->created))?></i>
                     <a href="<?= Yii::$app->urlManager->createUrl('article/' . $item->id) ?>"  style="float: right">Read More</a>
                 </div>
             </div>
@@ -136,14 +136,14 @@ $session = Yii::$app->session;
             <h3 class="page-header">Support</h3>
             <div class="row">
                 <center>
-                    <a href="#"><img class="alignleft size-full img-bottom" src="/images/galeri/partner/34-150x150-margos.jpg" width="95"></a>
-                    <a href="#"><img class="alignleft size-full img-bottom" src="/images/galeri/partner/35-150x150-kgh.jpg" width="95"></a>
-                    <a href="#"><img class="alignleft size-full img-bottom" src="/images/galeri/partner/38-150x150-la-cool-moments.jpg" width="95"></a>
-                    <a href="#"><img class="alignleft size-full img-bottom" src="/images/galeri/partner/34-150x150-margos.jpg" width="95"></a>
-                    <a href="#"><img class="alignleft size-full img-bottom" src="/images/galeri/partner/35-150x150-kgh.jpg" width="95"></a>
-                    <a href="#"><img class="alignleft size-full img-bottom" src="/images/galeri/partner/38-150x150-la-cool-moments.jpg" width="95"></a>
-                    <a href="#"><img class="alignleft size-full img-bottom" src="/images/galeri/partner/34-150x150-margos.jpg" width="95"></a>
-                    <a href="#"><img class="alignleft size-full img-bottom" src="/images/galeri/partner/35-150x150-kgh.jpg" width="95"></a>
+                    <a href="#"><img class="alignleft size-full img-bottom" src="app/backend/images/gallery/partner/34-150x150-margos.jpg" width="95"></a>
+                    <a href="#"><img class="alignleft size-full img-bottom" src="app/backend/images/gallery/partner/35-150x150-kgh.jpg" width="95"></a>
+                    <a href="#"><img class="alignleft size-full img-bottom" src="app/backend/images/gallery/partner/38-150x150-la-cool-moments.jpg" width="95"></a>
+                    <a href="#"><img class="alignleft size-full img-bottom" src="app/backend/images/gallery/partner/34-150x150-margos.jpg" width="95"></a>
+                    <a href="#"><img class="alignleft size-full img-bottom" src="app/backend/images/gallery/partner/35-150x150-kgh.jpg" width="95"></a>
+                    <a href="#"><img class="alignleft size-full img-bottom" src="app/backend/images/gallery/partner/38-150x150-la-cool-moments.jpg" width="95"></a>
+                    <a href="#"><img class="alignleft size-full img-bottom" src="app/backend/images/gallery/partner/34-150x150-margos.jpg" width="95"></a>
+                    <a href="#"><img class="alignleft size-full img-bottom" src="app/backend/images/gallery/partner/35-150x150-kgh.jpg" width="95"></a>
                 </center>
             </div>
         </div>

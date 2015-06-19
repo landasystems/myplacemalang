@@ -1,7 +1,7 @@
 <?php
 
 use common\models\Article;
-$this->title = 'ENTERTAIMENT';
+$this->title = 'Entertainment !!';
 
  $entertainment = Article::findOne(['id' => 6]);
 ?>

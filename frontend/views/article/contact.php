@@ -1,5 +1,5 @@
 <?php
-$this->title = 'CONTACT US !!';
+$this->title = 'Contact Us !!';
 
 use common\models\ArticleCategory;
 use common\models\Article;

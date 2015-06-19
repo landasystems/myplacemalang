@@ -1,5 +1,5 @@
 <?php
-$this->title = 'WUZZ UP MY PLACE !';
+$this->title = 'Wuzz Up My Place !';
 
 use common\models\ArticleCategory;
 use common\models\Article;

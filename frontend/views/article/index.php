@@ -34,14 +34,14 @@ $session = Yii::$app->session;
             <div class="col-md-1 text-center">
                 <p><i class="fa fa-file-text fa-4x"></i>
                 </p>
-                <p><?php echo date('F d, Y', strtotime($item->modified)); ?></p>
+                <p><?php echo date('F d, Y', strtotime($item->created)); ?></p>
             </div>
-            <div style ='overflow-y: hidden;' class="col-md-3">
+            <div style ='overflow: hidden;' class="col-md-3">
                 <center>
-                <a href="<?= Yii::$app->urlManager->createUrl('article/' . $item->id) ?>" class="">
-                    <?php $image = (!empty($item->primary_image)) ? Yii::$app->homeUrl . '/images/event/' . $item->primary_image : Yii::$app->homeUrl . 'images/700x700-noimage.jpg' ?> 
+                <a href="<?= Yii::$app->urlManager->createUrl('app/backend/iamges/article/' . $item->id) ?>" class="">
+                    <?php $image = (!empty($item->primary_image)) ? $item->imgSmall : Yii::$app->homeUrl . 'images/700x700-noimage.jpg' ?> 
 
-                    <img class="img-responsive img-hover " src="<?= $image; ?>" style="width:80%;" alt="">
+                    <img class="img-responsive img-hover " src="<?= $image; ?>" style="width:100%;" alt="">
                 </a>
                     </center>
             </div>
