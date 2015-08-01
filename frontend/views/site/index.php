@@ -151,13 +151,13 @@ $session = Yii::$app->session;
             <h3 class="page-header">Daily Event</h3>
             <div class="row">
                 <center>
-                    <a href="#"><img src="http://www.boshevvipclub.com/bali/images/col_fie.jpg" class="size-full event-bottom"></a>
+<!--                    <a href="#"><img src="http://www.boshevvipclub.com/bali/images/col_fie.jpg" class="size-full event-bottom"></a>
                     <a href="#"><img src="http://www.boshevvipclub.com/bali/images/locally.jpg" width="95" class="size-full event-bottom"></a>
                     <a href="#"><img src="http://www.boshevvipclub.com/bali/images/iamgo.jpg" width="95" class="size-full event-bottom"></a>
                     <a href="#"><img src="http://www.boshevvipclub.com/bali/images/rr.jpg" width="95" class="size-full event-bottom"></a>
                     <a href="#"><img src="http://www.boshevvipclub.com/bali/images/trackon.jpg" width="95" class="size-full event-bottom"></a>
                     <a href="#"><img src="http://www.boshevvipclub.com/bali/images/wetd.jpg" width="95" class="size-full event-bottom"></a>
-                    <a href="#"><img src="http://www.boshevvipclub.com/bali/images/sunday.jpg" width="95" class="size-full event-bottom"></a>
+                    <a href="#"><img src="http://www.boshevvipclub.com/bali/images/sunday.jpg" width="95" class="size-full event-bottom"></a>-->
                 </center>
             </div>
         </div>
