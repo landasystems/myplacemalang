@@ -71,7 +71,7 @@ AppAsset::register($this);
                                     <a href="<?= Yii::$app->urlManager->createUrl('article/about') ?>">About Us</a>
                                 </li>
                                 <li>
-                                    <a href="<?= Yii::$app->urlManager->createUrl('article/daily') ?>">Daily Events</a>
+                                    <a href="#">Daily Events</a>
                                 </li>
                                 <li>
                                     <a href="<?= Yii::$app->urlManager->createUrl('article/beverages') ?>">Beverages</a>

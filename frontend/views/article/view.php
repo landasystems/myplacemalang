@@ -83,7 +83,7 @@ $this->title = $model->title;
 
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="<?= Yii::$app->urlManager->createUrl('article/' . $item->id) ?>" >
+                        <a href="<?= Yii::$app->urlManager->createUrl('article/' . $item->alias) ?>" >
                             <img class="alignleft size-full" src=<?php echo (!empty($item->primary_image)) ?  $item->ImgSmall : Yii::$app->homeUrl . 'images/700x700-noimage.jpg' ?> width="100">
                             <p align="justify"><b><?= $item->title; ?></b></p>
                         </a>

@@ -43,9 +43,9 @@ $session = Yii::$app->session;
                 Jln. Jaksa Agung Suprapto 17, Malang, Jawa Timur<br>
             </p>
             <p><i class="fa fa-phone"></i> 
-                <abbr title="Phone">P</abbr>: (0341) 352 209</p>
+                <abbr title="Phone"></abbr>: (0341) 352 209</p>
             <p><i class="fa fa-envelope-o"></i> 
-                <abbr title="Email">E</abbr>: <a href="mailto:info@myplacemalang.com">info@myplacemalang.com</a>
+                <abbr title="Email"></abbr>: <a href="mailto:info@myplacemalang.com">info@myplacemalang.com</a>
             </p>
             <p>
                 <a href="#" class="icon-social" title="Instagram"><i class="fa fa-instagram fa-2x"></i></a>

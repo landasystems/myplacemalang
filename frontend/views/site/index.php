@@ -45,7 +45,7 @@ $session = Yii::$app->session;
                 ?>
             
             <div class="row list-event">
-                <a href="<?= Yii::$app->urlManager->createUrl('article/' . $item->id) ?>">
+                <a href="<?= Yii::$app->urlManager->createUrl('article/' . $item->alias) ?>">
                     <div class="col-md-6" style="overflow: hidden; height:150px">
                         <img src=<?php echo (!empty($item->primary_image)) ?  $item->imgSmall : Yii::$app->homeUrl . 'images/700x700-noimage.jpg'?> style="width: 100%;" class="img-polaroid">
                     </div>
@@ -91,7 +91,7 @@ $session = Yii::$app->session;
                     <?=substr(strip_tags($item->content), 0, 145). " . . ."; ?>
                     </p>
                     <i class="glyphicon glyphicon-calendar">  <?=date('d-m-Y',strtotime($item->created))?></i>
-                    <a href="<?= Yii::$app->urlManager->createUrl('article/' . $item->id) ?>"  style="float: right">Read More</a>
+                    <a href="<?= Yii::$app->urlManager->createUrl('article/' . $item->alias) ?>"  style="float: right">Read More</a>
                 </div>
             </div>
             <?php

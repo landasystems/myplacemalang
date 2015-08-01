@@ -3,6 +3,7 @@
 <?php
  
 $filesPath = realpath(param('pathImg'));
+trace(param('pathImg'));
 $filesUrl = param('urlImg');
  
 $this->widget("application.extensions.ezzeelfinder.ElFinderWidget", array(

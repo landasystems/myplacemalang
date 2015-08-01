@@ -38,7 +38,7 @@ $session = Yii::$app->session;
             </div>
             <div style ='overflow: hidden;' class="col-md-3">
                 <center>
-                <a href="<?= Yii::$app->urlManager->createUrl('app/backend/iamges/article/' . $item->id) ?>" class="">
+                <a href="<?= Yii::$app->urlManager->createUrl('app/backend/iamges/article/' . $item->alias) ?>" class="">
                     <?php $image = (!empty($item->primary_image)) ? $item->imgSmall : Yii::$app->homeUrl . 'images/700x700-noimage.jpg' ?> 
 
                     <img class="img-responsive img-hover " src="<?= $image; ?>" style="width:100%;" alt="">
@@ -46,14 +46,14 @@ $session = Yii::$app->session;
                     </center>
             </div>
             <div class="col-md-7" style="margin-top: -30px;">
-                <h3><a href="<?= Yii::$app->urlManager->createUrl('article/' . $item->id) ?>"><?= $item->title; ?></a>
+                <h3><a href="<?= Yii::$app->urlManager->createUrl('article/' . $item->alias) ?>"><?= $item->title; ?></a>
                 </h3>
                 <p>by <a href="#">Admin</a>
                 </p>
                 <p>
                     <?= substr(strip_tags($item->content), 0, 200) . " . . ."; ?>
                 </p>
-                <a class="btn btn-primary" href="<?= Yii::$app->urlManager->createUrl('article/' . $item->id) ?>">Read More <i class="fa fa-angle-right"></i></a>
+                <a class="btn btn-primary" href="<?= Yii::$app->urlManager->createUrl('article/' . $item->alias) ?>">Read More <i class="fa fa-angle-right"></i></a>
             </div>
         </div>
         <hr>

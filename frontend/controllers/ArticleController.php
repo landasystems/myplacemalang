@@ -14,7 +14,7 @@ class ArticleController extends Controller {
 
     public function actionView() {
         $this->layout = 'main';
-        $model = Article::findOne($_GET['id']);
+        $model = Article::findOne(['alias' => $_GET['alias']]);
         if (empty($model)) {
             throw new NotFoundHttpException('The requested page does not exist.');
         } else {
@@ -101,7 +101,7 @@ class ArticleController extends Controller {
                         ->orderBy('date_event DESC')->all();
         $data = array();
         foreach ($query as $val) {
-            $data[] = array('title' => $val->title, 'start' => $val->date_event, 'url' => Yii::$app->urlManager->createUrl('article/' . $val->id));
+            $data[] = array('title' => $val->title, 'start' => $val->date_event, 'url' => Yii::$app->urlManager->createUrl('article/' . $val->alias));
         }
 
         return json_encode($data);
