@@ -43,6 +43,17 @@ AppAsset::register($this);
         <script src="<?= Yii::$app->homeUrl ?>js/moment.min.js"></script>
         <script src="<?= Yii::$app->homeUrl ?>js/fullcalendar.min.js"></script>
     </head>
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id))
+                return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.4";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <body>
         <?php $this->beginBody() ?>
         <nav class="navbar navbar-inverse navbar-fixed-top background-transparant" role="navigation" >
@@ -85,7 +96,7 @@ AppAsset::register($this);
                             <a href="<?= Yii::$app->urlManager->createUrl('article/event') ?>">Event</a>
                         </li>
                         <li>
-                            <a href="#">Gallery</a>
+                            <a href="<?= Yii::$app->urlManager->createUrl('gallery/index') ?>">Gallery</a>
                         </li>
                         <li>
                             <a href="<?= Yii::$app->urlManager->createUrl('article/index') ?>">News</a>
@@ -104,7 +115,7 @@ AppAsset::register($this);
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 footer">
-                        <p><a href="#">MY PLACE MALANG</a> &copy; 2013 • ALL RIGHT RESERVED</p>
+                        <p><a href="#">MY PLACE MALANG</a> &copy; 2015 • ALL RIGHT RESERVED</p>
                     </div>
                 </div>
             </div>

@@ -33,7 +33,7 @@ class ArticleController extends Controller {
     public function actionIndex() {
         $this->layout = 'main';
         $query = Article::find()
-                ->where(['article_category_id' => [1, 36]])
+                ->where(['article_category_id' => 36])
                 ->orderBy('created DESC');
         $pagination = new Pagination([
             'defaultPageSize' => 5,
@@ -66,11 +66,11 @@ class ArticleController extends Controller {
         ]);
     }
 
-    public function actionGallery() {
-        $this->layout = 'main';
-        return $this->render('gallery', [
-        ]);
-    }
+//    public function actionGallery() {
+//        $this->layout = 'main';
+//        return $this->render('gallery', [
+//        ]);
+//    }
 
     public function actionContact() {
         $this->layout = 'main';

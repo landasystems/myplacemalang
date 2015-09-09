@@ -14,7 +14,7 @@ $session = Yii::$app->session;
 <div class="container content-body">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3 class="page-header">Gallery 
+                    <h3 class="page-header">Gallery babab
                     </h3>
                     <ol class="breadcrumb">
                         <li><a href="<?= Yii::$app->homeUrl ?>">Home</a>

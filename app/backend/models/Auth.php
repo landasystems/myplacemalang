@@ -112,6 +112,8 @@ class Auth extends CActiveRecord {
                     array('label' => '<span class="icon16 eco-list"></span>Category', 'url' => array('/articleCategory')),
                     array('label' => '<span class="icon16 iconic-icon-article"></span>Artikel', 'url' => array('/article')),
                 )),
+            array('label' => '<span class="icon16 entypo-icon-images"></span>Gallery', 'url' => array('/galleryCategory'), 'auth_id' => 'Gallery'),
+                
             array('label' => '<span class="icon16 minia-icon-download"></span>File Manager', 'url' => array('/fileManager')),
         );
     }

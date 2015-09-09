@@ -39,7 +39,7 @@ $this->title = $model->title;
             <hr>
             <?php if (!empty($model->primary_image)) { ?>
                 <!-- Preview Image -->
-                <center><img class="img-responsive" src="<?= $model->ImgMedium ?>" alt=""></center>
+                <center><img class="img-responsive" src="<?= $model->ImgBig ?>" alt=""></center>
                 <hr>
             <?php } ?>
 
@@ -50,12 +50,7 @@ $this->title = $model->title;
 
             <hr>
 
-            <!-- Blog Comments -->
-
-
-            <!-- Posted Comments -->
-
-            <!-- Comment -->
+            <div class="fb-comments" data-href="<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>" data-numposts="5" data-colorscheme="light"></div>
 
 
         </div>
@@ -84,7 +79,7 @@ $this->title = $model->title;
                 <div class="row">
                     <div class="col-md-12">
                         <a href="<?= Yii::$app->urlManager->createUrl('article/' . $item->alias) ?>" >
-                            <img class="alignleft size-full" src=<?php echo (!empty($item->primary_image)) ?  $item->ImgSmall : Yii::$app->homeUrl . 'images/700x700-noimage.jpg' ?> width="100">
+                            <img class="alignleft size-full" src=<?php echo (!empty($item->primary_image)) ? $item->ImgSmall : Yii::$app->homeUrl . 'images/700x700-noimage.jpg' ?> width="100">
                             <p align="justify"><b><?= $item->title; ?></b></p>
                         </a>
                         <i class="glyphicon glyphicon-calendar"></i>  <?= date('d-m-Y', strtotime($item->created)) ?>

@@ -59,7 +59,14 @@
                 )
         );
         ?>
-        <?php echo $form->fileFieldRow($model, 'primary_image', array('class' => 'span5')); ?>
+        
+        <?php 
+//        if(isset($model->primary_image)){
+//            $img = Yii::app()->landa->urlImg('','','');
+//            echo 
+//        }
+        echo $form->fileFieldRow($model, 'primary_image', array('class' => 'span5')); 
+        ?>
 
         <?php if (!isset($_GET['v'])) { ?>
             <div class="form-actions">

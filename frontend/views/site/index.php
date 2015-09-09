@@ -11,13 +11,17 @@ $session = Yii::$app->session;
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
         <div class="item active">
-            <img src="images/slider/box_1.jpg">
+            <img src="images/slider/1.jpg">
         </div>
         <div class="item">
-            <img src="images/slider/box_2.jpg">
+            <img src="images/slider/11.jpg">
+        </div>
+        <div class="item">
+            <img src="images/slider/3.jpg">
         </div>
     </div>
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -109,7 +113,7 @@ $session = Yii::$app->session;
         </div>
         <div class="col-md-3">
             <h3 class="page-header">Follow Us</h3>
-            <a class="twitter-timeline" href="https://twitter.com/MyPlaceMalang" data-widget-id="608592760799698944">Tweet oleh @MyPlaceMalang</a>
+            <a class="twitter-timeline"  height="300" href="https://twitter.com/MyPlaceMalang" data-widget-id="608592760799698944">Tweet oleh @MyPlaceMalang</a>
 
         </div>
         <div class="col-md-3">

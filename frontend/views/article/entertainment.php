@@ -28,7 +28,7 @@ $this->title = 'Entertainment !!';
                     </p>
                     <div>
                         <div class="">
-                           <?php $image= (!empty($entertainment->primary_image)) ? Yii::$app->homeUrl .'/images/article/'.$entertainment->primary_image : Yii::$app->homeUrl . 'images/700x700-noimage.jpg'?>
+                           <?php $image= (!empty($entertainment->primary_image)) ? Yii::$app->params['urlImg'] .'/article/'.$entertainment->primary_image : Yii::$app->homeUrl . 'images/700x700-noimage.jpg'?>
                             <a data-height="720" data-lighter="<?=$image ?>" data-width="1280" href='<?=$image ?>'>
                                 <img class="img-responsive img-hover" src="<?=$image ?>" align="left" style="margin-right:6px; width:20%"  alt="Superglow Band Ngerock Abeeeez !!!"/>
                             </a>
